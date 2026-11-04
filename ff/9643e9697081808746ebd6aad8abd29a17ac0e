@@ -1,0 +1,59 @@
+static/results-text/ad-blocker.txt
+  s_ba9f6befaa8497::t_b0eea7cf187e68 1-4
+static/results-text/audiocontext.txt
+  s_ba9f6befaa8497::t_5ebc2c0528ff1a 1-4
+static/results-text/browser-plugin-details.txt
+  s_ba9f6befaa8497::t_5414874e336660 1-4
+static/results-text/cookies-enabled.txt
+  s_ba9f6befaa8497::t_9e06a5a9219585 1-5
+static/results-text/cpu-class.txt
+  s_ba9f6befaa8497::t_184c4f9b2f77ee 1-4
+static/results-text/device-memory.txt
+  s_ba9f6befaa8497::t_2ec29ae8855bb0 1-4
+static/results-text/dnt-header.txt
+  s_ba9f6befaa8497::t_ea5416b8426e1f 1-4
+static/results-text/hardware-concurrency.txt
+  s_ba9f6befaa8497::t_dd96b2095a48c6 1-4
+static/results-text/hash-of-canvas.txt
+  s_ba9f6befaa8497::t_b26db7575d00cc 1-6,8-11,13
+static/results-text/hash-of-webgl.txt
+  s_ba9f6befaa8497::t_fcb955fdace997 1-4
+static/results-text/http-accept-headers.txt
+  s_ba9f6befaa8497::t_ad18b486fdd151 1-4
+static/results-text/language.txt
+  s_ba9f6befaa8497::t_8d91c4f5deacec 1-4
+static/results-text/limited-super-cookie.txt
+  s_ba9f6befaa8497::t_891b2208694e78 1-4
+static/results-text/platform.txt
+  s_ba9f6befaa8497::t_e96cbafdfccae2 1-4
+static/results-text/screen-size.txt
+  s_ba9f6befaa8497::t_8e620c5101db64 1-4
+static/results-text/system-fonts.txt
+  s_ba9f6befaa8497::t_22063c6d261acd 1-4
+static/results-text/time-zone-offset.txt
+  s_ba9f6befaa8497::t_779a1e8daf693e 1-4
+static/results-text/time-zone.txt
+  s_ba9f6befaa8497::t_69a467a2662807 1-4
+static/results-text/touch-support.txt
+  s_ba9f6befaa8497::t_eba8ddc8440300 1-4
+static/results-text/user-agent.txt
+  s_ba9f6befaa8497::t_b62cccb9da7f26 1-4
+static/results-text/webgl-vendor.txt
+  s_ba9f6befaa8497::t_c7ae1a48ec6b26 1-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "development:1.7.1",
+  "base_commit_sha": "ff9643e9697081808746ebd6aad8abd29a17ac0e",
+  "prompts": {},
+  "sessions": {
+    "s_ba9f6befaa8497": {
+      "agent_id": {
+        "tool": "antigravity",
+        "id": "54136803-1b07-40fa-9042-2241055d0848",
+        "model": "gemini-3.8-flash-medium"
+      },
+      "human_author": "Guiraud <mehdi.guiraud@gmail.com>"
+    }
+  }
+}
