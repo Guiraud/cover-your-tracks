@@ -7,61 +7,61 @@
 {% block body %}
 <div id='results-wrapper' class="nojs">
   <aside>
-    <h4>How to read your report</h4>
-    <p>You will see a summary of your overall tracking protection. The first section gives you a general idea of what your browser configuration is blocking (or not blocking). Below that is a list of specific browser characteristics in the format that a tracker would view them. We also provide descriptions of how they are incorporated into your fingerprint.
+    <h4>Comment lire votre rapport</h4>
+    <p>Vous trouverez ici un résumé de votre protection globale contre le pistage. La première section vous donne un aperçu de ce que votre configuration bloque (ou ne bloque pas). En dessous figure la liste des caractéristiques spécifiques transmises par votre navigateur aux traqueurs. Nous décrivons également leur rôle dans votre empreinte numérique.
     </p>
-    <h4>How can trackers track you?</h4>
-    <p>Trackers use a variety of methods to identify and track users. Most often, this includes tracking cookies, but it can also include browser fingerprinting. Fingerprinting is a sneakier way to track users and makes it harder for users to regain control of their browsers. This report measures how easily trackers might be able to fingerprint your browser.</p>
-    <h4>How can I use my results to be more anonymous?</h4>
+    <h4>Comment les traqueurs vous suivent-ils&nbsp;?</h4>
+    <p>Les traqueurs emploient diverses méthodes pour identifier et pister les internautes. Le plus souvent, ils utilisent des cookies de suivi, mais ils peuvent aussi s'appuyer sur l'empreinte numérique (browser fingerprinting). L'empreinte numérique est un procédé plus furtif qui prive l'utilisateur d'un contrôle direct sur son navigateur. Ce rapport évalue à quel point votre navigateur est facilement identifiable.</p>
+    <h4>Comment être plus anonyme grâce à ces résultats&nbsp;?</h4>
     <p>
-      Your results may indicate that you are easily identifiable, or that you aren’t currently blocking trackers.  We recommend you use a tracker blocker like <a href="https://privacybadger.org" target="_blank">Privacy Badger</a> or use a browser that has fingerprinting protection built in.
+      Vos résultats peuvent indiquer que vous êtes facilement identifiable ou que vous ne bloquez pas les traqueurs actuellement. Nous vous recommandons d'utiliser un bloqueur comme <a href="https://privacybadger.org" target="_blank">Privacy Badger</a> ou d'adopter un navigateur doté d'une protection native contre l'empreinte numérique.
     </p>
-    <h4>What is a bit of information? </h4>
-    <p>A “bit” is a basic unit of information for computers. The bit represents a logical state with one of two possible values, often represented as "1" or "0", for example. In your results from Cover Your Tracks, some metrics may be listed as “1” or “0”, or “true” or “false”, indicating whether a setting is enabled or disabled. While each individual metric’s details may seem like a small amount of information, when combined with your browser’s other metrics, they can uniquely identify your browser. Your results are measured in “bits of identifying information,” which is a combined summary of all these metrics.   </p>
+    <h4>Qu'est-ce qu'un bit d'information&nbsp;?</h4>
+    <p>Le «&nbsp;bit&nbsp;» est l'unité de base de l'information en informatique (prenant la valeur «&nbsp;0&nbsp;» ou «&nbsp;1&nbsp;»). Dans Cover Your Tracks, certaines métriques valent «&nbsp;1&nbsp;» ou «&nbsp;0&nbsp;», «&nbsp;vrai&nbsp;» ou «&nbsp;faux&nbsp;». Si chaque métrique isolée peut paraître anodine, leur combinaison forme une signature capable d'isoler votre appareil. Vos résultats sont donc exprimés en «&nbsp;bits d'information identifiante&nbsp;».</p>
   </aside>
   <div class="main-section">
-    <p>Here are your Cover Your Tracks results. They include an overview of how visible you are to trackers, with an index (and glossary) of all the metrics we measure below. </p>
+    <p>Voici vos résultats Cover Your Tracks. Ils comprennent une vue d'ensemble de votre visibilité auprès des traqueurs, avec un index de toutes les métriques mesurées ci-dessous.</p>
     <h2 class="indicate">
-      Our tests indicate that you have
+      Nos tests indiquent que
       <span id='summary_sentence'> {{ summary_sentence|safe }}</span></h2>
 
-      <h5>Is your browser:</h5>
+      <h5>Votre navigateur&nbsp;:</h5>
       <table class='tracker_results' id='results'>
         <tbody>
           <tr>
-            <td class='test_label'>Blocking tracking ads?</td>
+            <td class='test_label'>Bloque les publicités de pistage&nbsp;?</td>
             <td id='ad_status'>{{ ad_result|safe }}</td>
           </tr>
           <tr>
-            <td class='test_label'>Blocking invisible trackers?</td>
+            <td class='test_label'>Bloque les traqueurs invisibles&nbsp;?</td>
             <td id='tracker_status'>{{ tracker_result|safe }}</td>
           </tr>
           <tr>
-            <td class='test_label'>Protecting you from fingerprinting?</td>
+            <td class='test_label'>Vous protège contre l'empreinte numérique&nbsp;?</td>
             <td id='fp_status'>{{ fingerprint_result|safe }}</td>
           </tr>
           <tr id='acceptable_ads_tr'>
-            <td class='test_label'> <a href='https://www.eff.org/deeplinks/2017/11/panopticlick-30'>Acceptable ads</a> ?</td>
+            <td class='test_label'> <a href='https://www.eff.org/deeplinks/2017/11/panopticlick-30'>Publicités acceptables&nbsp;?</a></td>
           </tr>
           {% if fingerprint_result == no %}
-            <tr  style="display: none;">
-              <td class='test_label'>Unblocking 3rd parties that honor <a href='https://www.eff.org/dnt-policy'>Do Not Track</a>?</td>
+            <tr style="display: none;">
+              <td class='test_label'>Débloque les tiers respectant <a href='https://www.eff.org/dnt-policy'>Do Not Track</a>&nbsp;?</td>
               <td id='dnt_status'>{{ dnt_result|safe }}</td>
             </tr>
           {% endif %}
         </tbody>
       </table>
-      <p class="center">Still wondering how fingerprinting works?</p>
-       <a class="button-style green" href='/learn'>Learn more</a>
-      <p class="tracker_results">Note: because tracking techniques are complex, subtle, and constantly evolving, Cover Your Tracks does not measure all forms of tracking and protection.</p>
+      <p class="center">Vous vous demandez comment fonctionne l'empreinte numérique&nbsp;?</p>
+       <a class="button-style green" href='/learn'>En savoir plus</a>
+      <p class="tracker_results">Remarque&nbsp;: les techniques de suivi étant complexes, subtiles et en constante évolution, Cover Your Tracks ne mesure pas l'intégralité des formes de pistage et de protection existantes.</p>
       <div id='fingerprintTable'>{{ fingerprint_content|safe }}</div>
       <div id="buttons">
         <div class="row">
-          <a href="/kcarter" class="button-style" id="kcarterlink" title="Click here to re-test how trackable your browser is">Re-test your browser</a>
+          <a href="/kcarter" class="button-style" id="kcarterlink" title="Cliquez ici pour tester à nouveau votre navigateur">Tester à nouveau votre navigateur</a>
         </div>
       </div>
       <div class="fingerprint-thanks">
-        <font size='-2'>Thanks to <a href='https://github.com/Valve/fingerprintjs2'>Fingerprint2</a> for various fingerprinting tests, <a href='http://www.aloodo.org/'>Aloodo</a> for portions of the tracker test. Send questions or comments to <a href="mailto:coveryourtracks@eff.org">coveryourtracks@eff.org</a>.</font>
+        <font size='-2'>Remerciements à <a href='https://github.com/Valve/fingerprintjs2'>Fingerprint2</a> pour divers tests d'empreinte et à <a href='http://www.aloodo.org/'>Aloodo</a> pour des portions du test de traqueurs.</font>
       </div>
     </div>
   </div>

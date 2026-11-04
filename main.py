@@ -346,13 +346,13 @@ def results_nojs():
         tool_recommendation = get_tool_recommendation(detection)
 
         if detection['platform'] == "desktop" and (detection['browser'] == "chrome" or detection['browser'] == "firefox"):
-            summary_sentence += " <strong>installing EFF's Privacy Badger</strong>"
+            summary_sentence += " <strong>en installant l'extension Privacy Badger</strong>."
         elif detection['platform'] == "desktop" and detection['browser'] != "opera" and detection['browser'] != "ie":
-            summary_sentence += " switching to a browser or OS that offers better protections."
+            summary_sentence += " en adoptant un navigateur ou un système d'exploitation offrant de meilleures protections."
         else:
-            summary_sentence += " <strong>installing extra protections</strong>.  Privacy Badger isn't available for your browser / OS, but <a id='tool-recommendation' target='_blank' href='" + \
+            summary_sentence += " <strong>en installant des protections supplémentaires</strong>. Privacy Badger n'est pas disponible pour votre configuration, mais <a id='tool-recommendation' target='_blank' href='" + \
                 tool_recommendation['url'] + "'>" + tool_recommendation['name'] + \
-                "</a> may work for you."
+                "</a> pourrait vous convenir."
 
     fingerprint_matching, fingerprint_content = fingerprint_generic(
         False, True)
@@ -465,35 +465,35 @@ def api_v1_ua_uniqueness():
 
 @app.route("/privacy")
 def privacy():
-    return render_template('privacy.html', title="Privacy Policy")
+    return render_template('privacy.html', title="Politique de confidentialité")
 
 
 @app.route("/privacy-1.0")
 def privacy_1_0():
-    return render_template('privacy_1_0.html', title="Privacy Policy")
+    return render_template('privacy_1_0.html', title="Politique de confidentialité")
 
 @app.route("/privacy-2.0")
 def privacy_2_0():
-    return render_template('privacy_2_0.html', title="Privacy Policy")
+    return render_template('privacy_2_0.html', title="Politique de confidentialité")
 
 @app.route("/privacy-3.0")
 def privacy_3_0():
-    return render_template('privacy_3_0.html', title="Privacy Policy")
+    return render_template('privacy_3_0.html', title="Politique de confidentialité")
 
 @app.route("/about")
 def about():
-    return render_template('about.html', title="About")
+    return render_template('about.html', title="À propos")
 
 
 
 @app.route("/faq")
 def faq():
-    return render_template('faq.html', title="Frequently asked questions about Cover Your Tracks")
+    return render_template('faq.html', title="Foire aux questions sur Cover Your Tracks")
 
 
 @app.route("/self-defense")
 def self_defense():
-    return render_template('self-defense.html', title="Self-Defense")
+    return render_template('self-defense.html', title="Autodéfense numérique")
 
 
 @app.route('/robots.txt')

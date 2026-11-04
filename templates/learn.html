@@ -8,119 +8,104 @@
       <div class="bar">
         <div class="wrapper">
           <div class="attribution">
-            <img class="logo" src="/static/images/eff-logo-red.svg" alt="EFF logo">
-            <span>A Project of the <a href="https://www.eff.org/">Electronic Frontier Foundation</a>
-              <span>
-              </div>
-            </div>
-          </div>
-          <div class="wrapper">
-            <div class="title-area">
-              <div class="site-title">
-                <a class="cyt-logo" href="/">
-                </a>
-                <h2 class="tagline">
-                  See how trackers view your browser
-                </h2>
-              </div>
-              <nav>
-                <ul>
-                  <li class="test-nav"><a href="/kcarter-nojs" class="button-style" id="kcarterlink" >Test Your Browser</a></li>
-                  <li><a href="/learn">Learn</a></li>
-                  <li><a href="/about">About</a></li>
-                  <li><a href="https://supporters.eff.org/donate/coveryourtracks" target=_blank>Donate</a></li>
-                </ul>
-              </nav>
-            </div>
+            <img class="logo" src="/static/images/eff-logo-red.svg" alt="Logo EFF">
+            <span>Un projet de l'<a href="https://www.eff.org/">Electronic Frontier Foundation</a> (EFF)</span>
           </div>
         </div>
       </div>
-      {% endblock %}
-      {% block body %}
-      <body id="learn">
-        <div class="main-section">
-          <div class="definitions">
-            <div class="left">
-              <h3>How do trackers work?</h3>
-              <img src="/static/images/spot-with-tracks.png" alt="image of animal tracks">
-            </div>
-            <div class="right">
-              <p>When you visit a website, your browser makes a "request" for that site. In the background, advertising code and invisible trackers on that site might also cause your browser to make dozens or even hundreds of requests to other hidden third parties. Each request contains several pieces of information about your browser and about you, from your time zone to your browser settings to what versions of software you have installed.</p>
-              <p>Some of this information is passed along by default simply to help you view the page. For example, HTTP headers are essential to most web functionality, and broadcast your device and browser version. But a lot of the information in your browser’s requests is also extracted by third-party ad networks, which have sneaky tracking mechanisms embedded across the Internet to gather your information.</p>
-              <p>At first glance, the data points that third-party trackers collect may seem relatively mundane and disparate. But when compiled together, they can reveal a detailed behavioral profile of your online activity, from political affiliation to education level to income bracket. As long as this trove of data about you is linked back to you, your online activity can be logged. Ad networks primarily rely on two methods to maintain this link: cookie tracking, and browser fingerprinting. </p>
-              <h4>What are cookies? </h4>
-              <p>Cookies are small chunks of information that websites store in your browser. Their main use is to remember helpful things like your account login info, or what items were in your online shopping cart—in other words, they save your place. But they can also be misused to link all your visits, searches, and other activities on a site together. This use of cookies is a privacy violation, and browsers generally allow you to block, limit, or delete cookies.
-              </p>
-              <h4>What is a digital fingerprint?</h4>
-              <p>A digital fingerprint is essentially a list of characteristics that are unique to a single user, their browser, and their particular hardware setup. This includes information the browser needs to send to access websites, like the location of the website the user is requesting. But it also includes a host of seemingly insignificant data (like screen resolution and installed fonts) gathered by tracking scripts. Tracking sites can stitch all the small pieces together to form a unique picture, or "fingerprint," of your device.</p>
-              <h4>What is the difference?</h4>
-              <p>
-                Think of the small tracking devices scientists use to follow animal migration patterns, or a GPS transmitter attached to a car. As long as they’re attached to the target animal or vehicle, they are accurate and effective—but they lose all value if they’re knocked off or discarded. This is roughly how cookies behave: they track users up until the point a user deletes them.</p>
-
-                <p>Fingerprinting uses more permanent identifiers such as hardware specifications and browser settings. This is equivalent to tracking a bird by its song or feather markings, or a car by its license plate, make, model, and color. In other words, metrics that are harder to change and impossible to delete.
-                </p>
-                <h4>Can I do anything about this?! </h4>
-                <p>Completely blocking trackers is difficult, even with a fully-featured tracker blocker. Even so, <strong>we recommend using the tracking protections above</strong>. Privacy protection does not have to be perfect to make a big difference!</p>
-                <p>There are two main dynamics that make trackers hard to entirely avoid online:</p>
-                <ol>
-                  <li><strong>Impact on Usability:</strong> It’s unfortunate that enhanced privacy often comes at the expense of functionality. For instance, you may want to disable JavaScript to stop tracking scripts from running. But this will likely make it hard to shop, fill out forms, watch videos, or see interactive web elements. Many pages require disabling your ad blocker to see content, or refuse to load anything unless you use the “official” app. </li>
-                  <li><strong>Identifiable Protections:</strong> Paradoxically, sometimes your protections themselves can become part of your fingerprint. An add-on intended to protect you can even lead to your full identification. Changing your settings and installing protections can lead trackers to be identified. In this case, you become a “mystery user with a very specific combination of privacy protections installed.”</li>
-                </ol>
-                <p>In practice, the most realistic protection currently available is the Tor Browser, which has put a lot of effort into reducing browser fingerprintability. For day-to-day use, the best options are to run tools like Privacy Badger or Disconnect that will block some (but unfortunately not all) of the domains that try to perform fingerprinting, and/or to use a tool like NoScript( for Firefox), which greatly reduces the amount of data available to fingerprinters.</p>
-                <p>Cover Your Tracks’ primary goal is to help you determine your own balance between privacy and convenience. By giving you a summary of your overall protection and a list of characteristics that make up your digital fingerprint, you can see exactly how your browser appears to trackers, and how implementing different protection methods changes this visibility. The following suggestions are simple, straightforward protection methods, and are an excellent starting point.</p>
-            </div>
+      <div class="wrapper">
+        <div class="title-area">
+          <div class="site-title">
+            <a class="cyt-logo" href="/">
+            </a>
+            <h2 class="tagline">
+              Voyez comment les traqueurs perçoivent votre navigateur
+            </h2>
           </div>
-          <div class="definitions">
-            <div class="left">
-              <img src="/static/images/spot-with-tracks.png" alt="image of animal tracks">
-            </div>
-            <div class="right">
-              <h3 id="simple">Simple suggestions</h3>
+          <nav>
+            <ul>
+              <li class="test-nav"><a href="/kcarter-nojs" class="button-style" id="kcarterlink">Tester votre navigateur</a></li>
+              <li><a href="/learn">Comprendre</a></li>
+              <li><a href="/about">À propos</a></li>
+              <li><a href="https://supporters.eff.org/donate/coveryourtracks" target="_blank">Faire un don</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+  {% block body %}
+  <body id="learn">
+    <div class="main-section">
+      <div class="definitions">
+        <div class="left">
+          <h3>Comment fonctionnent les traqueurs&nbsp;?</h3>
+          <img src="/static/images/spot-with-tracks.png" alt="Illustration de traces animales">
+        </div>
+        <div class="right">
+          <p>Lorsque vous visitez un site Web, votre navigateur émet une «&nbsp;requête&nbsp;» vers ce site. En coulisses, les scripts publicitaires et les balises invisibles intégrés à cette page déclenchent également des dizaines, voire des centaines de requêtes vers d'autres tiers invisibles. Chaque requête transmet plusieurs éléments d'information sur votre navigateur et sur vous-même&nbsp;: votre fuseau horaire, vos réglages de langue, la version exacte de vos logiciels et votre matériel.</p>
+          <p>Une partie de ces informations est transmise par défaut simplement pour permettre l'affichage de la page (les en-têtes HTTP sont indispensables au fonctionnement du Web). Mais une grande part de ces données est également captée par des régies publicitaires tierces disposant de mécanismes de suivi disséminés sur tout le Web.</p>
+          <p>Prises isolément, les données recueillies par les traqueurs peuvent sembler anodines. Mais une fois agrégées, elles révèlent un profil comportemental très précis de vos activités en ligne (centres d'intérêt, niveau d'études, tranche de revenus, opinions politiques). Dès lors que ces données peuvent être rattachées à votre personne ou à votre appareil, vos faits et gestes sont consignés. Les réseaux publicitaires s'appuient principalement sur deux méthodes pour maintenir ce lien&nbsp;: les cookies de pistage et l'empreinte numérique du navigateur.</p>
+          <h4>Que sont les cookies&nbsp;?</h4>
+          <p>Les cookies sont de petits fichiers que les sites Web stockent dans votre navigateur. Leur utilité première est légitime&nbsp;: mémoriser votre session de connexion ou le contenu d'un panier d'achat. Cependant, ils peuvent être détournés pour relier l'ensemble de vos visites, recherches et actions d'un site à un autre. Cet usage publicitaire porte atteinte à la vie privée, c'est pourquoi les navigateurs permettent de bloquer, restreindre ou supprimer les cookies.
+          </p>
+          <h4>Qu'est-ce qu'une empreinte numérique (digital fingerprint)&nbsp;?</h4>
+          <p>Une empreinte numérique est une combinaison de caractéristiques techniques propres à un utilisateur, à son navigateur et à sa configuration matérielle. Cela inclut les informations techniques nécessaires à la connexion, mais aussi une foule de détails apparemment mineurs (résolution d'écran, liste des polices système, rendu graphique de la carte 3D, capacités audio) recueillis par des scripts JavaScript. Les traqueurs assemblent ces micro-indices pour composer une signature unique de votre appareil.</p>
+          <h4>Quelle est la différence entre cookies et empreinte&nbsp;?</h4>
+          <p>
+            Pensez aux balises GPS fixées sur un véhicule ou un animal sauvage. Tant que la balise reste attachée, le suivi est précis et continu &mdash; mais dès qu'elle est décrochée ou jetée, le suivi s'arrête. C'est exactement le comportement des cookies&nbsp;: ils vous suivent jusqu'à ce que vous les effaciez.</p>
 
-                <h4>Using a Tracker Blocker</h4>
-                <p>Install a tracker blocker and watch your browsing experience get a lot more pleasant</p>
+          <p>L'empreinte numérique repose sur des identifiants permanents liés au matériel et au système. Cela équivaut à reconnaître un oiseau à son chant et à son plumage, ou une voiture à sa plaque d'immatriculation, sa marque, son modèle et sa teinte. En d'autres termes, des caractéristiques impossibles à «&nbsp;supprimer&nbsp;» d'un simple clic.
+          </p>
+          <h4>Peut-on agir contre ce pistage&nbsp;?</h4>
+          <p>Bloquer totalement les traqueurs est difficile, même avec les meilleurs outils. Néanmoins, <strong>nous vous recommandons vivement d'activer les protections disponibles</strong>&nbsp;: une protection n'a pas besoin d'être absolue pour faire une réelle différence&nbsp;!</p>
+          <p>Deux dynamiques principales rendent les traqueurs difficiles à esquiver totalement&nbsp;:</p>
+          <ol>
+            <li><strong>L'impact sur l'ergonomie&nbsp;:</strong> Renforcer sa confidentialité se fait souvent au détriment de l'utilisabilité. Par exemple, désactiver totalement JavaScript neutralise les scripts de suivi, mais rend impossible les achats en ligne, la lecture de vidéos, les formulaires ou les fonctionnalités interactives. De nombreux sites bloquent l'accès aux bloqueurs de pub ou exigent l'application mobile propriétaire.</li>
+            <li><strong>Des protections identifiables&nbsp;:</strong> Paradoxalement, vos outils de protection peuvent eux-mêmes devenir une composante distinctive de votre empreinte. Installer une combinaison rare d'extensions peut vous singulariser davantage. Vous devenez alors «&nbsp;l'unique internaute disposant de cette combinaison précise de bloqueurs&nbsp;».</li>
+          </ol>
+          <p>En pratique, la protection la plus efficace actuellement reste le navigateur Tor (Tor Browser), dont l'architecture a été conçue pour uniformiser l'empreinte de tous ses utilisateurs. Pour un usage quotidien ordinaire, la meilleure démarche consiste à utiliser des extensions comme Privacy Badger ou uBlock Origin pour filtrer les régies de pistage, combinées aux réglages de protection renforcée de votre navigateur.</p>
+          <p>L'objectif de Cover Your Tracks est de vous aider à trouver votre propre équilibre entre confort d'usage et vie privée. En examinant vos résultats et la liste de vos caractéristiques d'empreinte, vous visualisez précisément ce que les traqueurs voient et comment vos protections influent sur cette visibilité.</p>
+        </div>
+      </div>
+      <div class="definitions">
+        <div class="left">
+          <img src="/static/images/spot-with-tracks.png" alt="Illustration de traces animales">
+        </div>
+        <div class="right">
+          <h3 id="simple">Conseils simples de protection</h3>
 
+          <h4>Utiliser un bloqueur de traqueurs</h4>
+          <p>Installez un bloqueur de traqueurs pour assainir et fluidifier votre navigation quotidienne.</p>
 
-                <p>Most tracker blockers cross-reference <a href="https://spreadprivacy.com/duckduckgo-tracker-radar/" target="_blank">massive lists</a> of tracking scripts. They then block any attempts to load an ad or other item that matches.
-                </p>
+          <p>La plupart des bloqueurs s'appuient sur des listes communautaires constamment mises à jour pour bloquer les scripts publicitaires et les balises de suivi.
+          </p>
 
-                <p>When you block trackers, you prevent tracking companies from reading your browser fingerprint. However, more advanced tracking techniques may still be able to gather information about you.
-                </p>
+          <p>En bloquant ces scripts tiers, vous empêchez les régies d'accéder à votre navigateur pour calculer son empreinte.
+          </p>
 
-                <h4>Disabling Javascript</h4>
-                <p>Most trackers run on JavaScript, and they can’t gather much of the information used to determine your browser fingerprint without it. Thus, your browser looks a lot less distinct, and is more protected.
-                </p>
-                <p>But there is a trade off. Disabling JavaScript breaks a staggering amount of websites, and limits the functionality of many more.</p>
+          <h4>Désactiver JavaScript (avec parcimonie)</h4>
+          <p>La grande majorité des traqueurs dépendent de JavaScript pour sonder votre matériel et vos polices. Sans JavaScript, votre navigateur apparaît beaucoup plus générique et mieux protégé.
+          </p>
+          <p>Mais le compromis est lourd&nbsp;: désactiver JavaScript casse un nombre considérable de sites modernes.</p>
 
-                <h4>Changing browser settings from defaults</h4>
-                <p>Tracking is so pervasive that all of the major browsers (Chrome, Firefox, and Safari) come with settings that disable certain types of tracking. Turning them on or off is as simple as going into the settings menu and clicking a button. </p>
+          <h4>Ajuster les paramètres de confidentialité de votre navigateur</h4>
+          <p>Les principaux navigateurs (Firefox, Safari, Brave, Chrome) proposent des réglages intégrés de protection contre le suivi et les cookies tiers. Activer le niveau «&nbsp;Strict&nbsp;» ou «&nbsp;Renforcé&nbsp;» dans les préférences de votre navigateur améliore nettement votre confidentialité sans rien installer de plus.</p>
 
-                <p>Disabling tracking scripts in your browser settings is reliably effective, though not as robust as a designated tracker-blocker. </p>
+          <h4>Utiliser un navigateur résistant à l'empreinte</h4>
+          <p>Des navigateurs spécialisés intègrent des contre-mesures spécifiques&nbsp;: le navigateur Tor uniformise l'empreinte pour fondre tous les utilisateurs dans une identité collective, tandis que Brave randomise certaines métriques Canvas et Audio d'une session à l'autre pour empêcher la corrélation.</p>
 
-                <p>For more info about what settings and protections your browser offers compared to others, check out this article <a href="https://themarkup.org/ask-the-markup/2020/09/22/i-scanned-the-websites-i-visit-with-blacklight-and-its-horrifying-now-what" target="blank">from Blacklight</a>.</p>
+          <h4>Le mode «&nbsp;Navigation privée&nbsp;» ou «&nbsp;Incognito&nbsp;»</h4>
+          <p>Historiquement, le mode de navigation privée n'a qu'un seul objectif&nbsp;: empêcher l'enregistrement de l'historique et des cookies sur <em>votre propre appareil</em> après la fermeture de la fenêtre. Il n'a pas été conçu pour empêcher les serveurs distants de reconnaître votre machine.</p>
+          <p>Dans Firefox, la navigation privée active toutefois le blocage renforcé des traqueurs connus. Cependant, cela ne bloque pas les nouveaux domaines d'empreinte non répertoriés. Le mode Incognito de Google Chrome, quant à lui, ne bloque pas les traqueurs ni le calcul d'empreinte.</p>
+        </div>
+      </div>
+    </div>
 
-                <h4>Using a fingerprint resistant browser</h4>
-                <p>Some newer browsers were built to thwart fingerprinting, such as Tor Browser and Brave. How they do this varies from browser to browser, but they generally work by making your fingerprint less unique and/or less consistent. This means trackers have a harder time following your usage of the web.</p>
-                <h4>Can my attempts to protect myself backfire? How can attempting to make myself more anonymous actually make me more identifiable?</h4>
-                <p>Each browser metric is highly connected to other metrics in complex ways. This is why we <em>don’t recommend</em> trying to change a single element of your fingerprint. Striving to get the most common result for any individual metric may seem like a good idea, but it can actually make your browser more identifiable.</p>
-                <p>Let’s look at an example of how these metrics are interconnected:</p>
-                <p>No matter what browser you’re using, they all send information about themselves to servers so that web content loads correctly. This information includes the browser name and version. If you swap out the identifier of the browser you're actually using with one from a more common browser, you may make yourself completely identifiable. How is this possible? If Chrome is a more common browser, how can identifying your browser as Chrome make you more unique?</p>
-                <p>Because trackers aren’t only looking at what browser version you have. In combination with other metrics, your fake Chrome browser may stand out. This is because if you are actually using, say, Safari browser all the other metrics will point to this fact. You will have the only browser out there identifying itself as Chrome but looking like Safari.</p>
-                <h4>Incognito mode</h4>
-                <p>Historically, Private Browsing and Incognito Mode had a single purpose. These modes were intended to prevent traces of sites you visited from being stored on <em>your machine</em>. It was not meant to prevent remote sites or trackers from identifying and storing when you visit a site on <em>their</em> servers.</p>
-                <p>If you are using Firefox, using Private Browsing will provide some protections against trackers. Any trackers that are included in the <a href="https://disconnect.me/trackerprotection" target="_blank">Disconnect</a> tracking protection list will be blocked. This keeps you safe from <em>known</em> trackers. Known fingerprinters and cryptominers which use your browser against you are also blocked. However, this will not prevent a <em>new</em> fingerprinter or tracker from identifying your browser and keeping tabs on it. In order to get this extra level of protection, your browser needs to have a fingerprint which is either:</p>
-                <ol>
-                  <li>so common that a tracker can't tell you apart from the crowd (as in <a href="https://www.torproject.org" target="_blank">Tor Browser</a>), or</li>
-                  <li>randomized so that a tracker can't tell it's you from one moment to the next (as in <a href="https://www.brave.com" target="_blank"></a>Brave browser).</li>
-                </ol>
-                <p>Google's Chrome browser does not provide protection against trackers or fingerprinters in Incognito Mode.</p>
-                </div>
-              </div>
-            </div>
+    <iframe id="a" style="position:absolute;right:0px;bottom:0px;height:1px;width:1px;" src='https://{{ third_party_trackers['ad_server'] }}/clear-cookies?random={{ cb }}'></iframe>
+    <iframe id="t" style="position:absolute;right:0px;bottom:0px;height:1px;width:1px;" src='https://{{ third_party_trackers['tracker_server'] }}/clear-cookies?random={{ cb }}'></iframe>
+    <iframe id="dnt" style="position:absolute;right:0px;bottom:0px;height:1px;width:1px;" src='https://{{ third_party_trackers['dnt_server'] }}/clear-cookies?random={{ cb }}'></iframe>
+    {% endblock %}
 
-            <iframe id="a" style="position:absolute;right:0px;bottom:0px;height:1px;width:1px;" src='https://{{ third_party_trackers['ad_server'] }}/clear-cookies?random={{ cb }}'></iframe>
-            <iframe id="t" style="position:absolute;right:0px;bottom:0px;height:1px;width:1px;" src='https://{{ third_party_trackers['tracker_server'] }}/clear-cookies?random={{ cb }}'></iframe>
-            <iframe id="dnt" style="position:absolute;right:0px;bottom:0px;height:1px;width:1px;" src='https://{{ third_party_trackers['dnt_server'] }}/clear-cookies?random={{ cb }}'></iframe>
-            {% endblock %}
-
-            {% block java %}{% endblock %}
+    {% block java %}{% endblock %}

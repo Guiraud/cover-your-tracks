@@ -1,6 +1,4 @@
-<h5>What is this?</h5>
-<p>The dimensions of your current browser window, and its color depth.
-</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>While this metric can supplement other information, it’s often too ‘brittle’ to be usable by trackers because users can easily change their browser window dimensions.
-</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>La résolution de l'écran, les dimensions de la fenêtre du navigateur et la profondeur des couleurs.</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Bien qu'utile en complément d'autres informations, cette métrique est parfois fluctuante car l'utilisateur peut redimensionner sa fenêtre ou brancher des écrans externes.</p>

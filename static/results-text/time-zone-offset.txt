@@ -1,7 +1,4 @@
-Time Zone Offset
-<h5>What is this?</h5>
-<p>This metric is a number which indicates the current difference between your time and GMT, in minutes.
-</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>Historically, time zones couldn’t be transmitted by browser headers, so time offset was used instead. It does not always change in step with the ‘time zone’ metric and thus can provide more insight particular in areas that are unique in the way they observe daylight savings time.
-</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Cette métrique indique le décalage actuel en minutes entre votre heure locale et le temps universel (UTC/GMT).</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Historiquement utilisé lorsque les fuseaux nommés n'étaient pas disponibles, ce décalage varie selon les règles d'heure d'été et d'hiver de votre région.</p>

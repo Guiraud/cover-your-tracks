@@ -1,6 +1,4 @@
-<h5>What is this?</h5>
-<p>A web header that is used to let the server know if you prefer not to be tracked. This is usually either not delivered at all, or set to ‘1’. A setting of ‘1’ indicates that your browser would prefer not to be tracked. Unfortunately, most sites ignore this request.
-</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>Browsers which set the DNT header to ‘1’ are fairly rare, and this can be an identifying metric.  However, this should be left as the default for your browser.
-</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Un en-tête Web permettant d'indiquer au serveur que vous refusez d'être pisté. Il est généralement absent ou fixé à « 1 » (indiquant votre souhait de ne pas être pisté). La plupart des sites commerciaux ignorent malheureusement cette directive.</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Les navigateurs qui transmettent explicitement l'en-tête DNT à « 1 » étant relativement minoritaires, cela peut paradoxalement constituer une caractéristique distinctive dans votre empreinte.</p>

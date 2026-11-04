@@ -29,15 +29,15 @@ class EntropyHelper(object):
     @staticmethod
     def size_words(total):
         if total > 1000000:
-            return "several million"
+            return "plusieurs millions"
         elif total > 100000:
-            return "several hundred thousand"
+            return "plusieurs centaines de milliers"
         elif total > 10000:
-            return "about ten thousand"
+            return "environ dix mille"
         elif total >= 1000:
-            return "several thousand"
+            return "plusieurs milliers"
         else:
-            return "under a thousand"
+            return "moins d'un millier"
 
     @staticmethod
     def single_whorl_uniqueness(whorl_name, whorl_value):

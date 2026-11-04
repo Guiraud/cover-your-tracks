@@ -1,5 +1,4 @@
-<h5>What is this?</h5>
-<p>A web header that is used to let the server know what types of content the browser is able to handle.</p>
-<p>For example, a server can choose to deliver a plain text file if it sees that a user’s browser does not support rich documents.</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>This information can be fairly unique, and varies from browser to browser.  However, this string doesn’t tend to change much over time, and can remain constant through many versions of the same browser.</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Les en-têtes HTTP_ACCEPT informent le serveur Web des formats de contenu, d'encodage et de compression acceptés par votre navigateur.</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Bien que ces en-têtes soient partagés par de nombreux navigateurs du même type, des configurations atypiques ou des extensions manipulant les requêtes peuvent les rendre remarquablement distinctifs.</p>

@@ -1,4 +1,4 @@
-<h5>What is this?</h5>
-<p>This metric notes  languages you prefer site content to be delivered in. </p>
-<h5>How is this used in your fingerprint?</h5>
-<p>This can add a fair amount of information to your browser fingerprint. This is especially true if the language is uncommon for your timezone. While some other fingerprinting metrics can be protected by the browser or add-ons, this is not possible for language. Spoofing the language header would greatly impede usability. </p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Cet en-tête indique vos préférences linguistiques (par exemple « fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3 ») pour permettre aux sites d'afficher la bonne langue.</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Cette valeur peut devenir très distinctive si vous utilisez des combinaisons linguistiques rares dans votre zone géographique. Contrairement à d'autres métriques, falsifier cet en-tête dégrade fortement l'expérience de navigation.</p>

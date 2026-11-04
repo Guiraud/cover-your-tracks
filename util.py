@@ -5,7 +5,7 @@ import re
 
 
 def number_format(num, places=0):
-    """Format a number with grouped thousands and given decimal places"""
+    """Format a number with grouped thousands and given decimal places (French typography)"""
 
     places = max(0, places)
     tmp = "%.*f" % (places, num)
@@ -19,9 +19,11 @@ def number_format(num, places=0):
         count += 1
         formatted.append(integer[i - 1])
         if count % 3 == 0 and i - 1:
-            formatted.append(",")
+            formatted.append("\xa0")
 
     integer = "".join(formatted[::-1])
+    if decimal:
+        decimal = "," + decimal[1:]
     return integer + decimal
 
 

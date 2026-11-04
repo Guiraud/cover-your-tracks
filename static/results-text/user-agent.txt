@@ -1,7 +1,4 @@
-<h5>What is this?</h5>
-<p>A web header that relays information to the web server about your browser and its version.
-</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>
-This information can be very specific. <em>If customized</em> can single-handedly identify a specific user’s browser.
-</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Un en-tête Web qui transmet au serveur des détails sur votre navigateur, son moteur de rendu et sa version précise.</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Cette chaîne peut être très détaillée. Lorsqu'elle est personnalisée ou atypique, elle peut suffire à elle seule à identifier un navigateur.</p>

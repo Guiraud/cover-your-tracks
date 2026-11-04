@@ -1,39 +1,39 @@
-  <h2>Your Results</h2>
+  <h2>Vos résultats</h2>
   <div class='entropy' style='text-align:center border:1px'>
     {% if randomized_results >= 4: %}
-    <p>Your browser fingerprint <strong>has been randomized</strong> among the {{ total_formatted }} tested in the past 45 days. Although sophisticated adversaries may still be able to track you to some extent, randomization provides a very strong protection against tracking companies trying to fingerprint your browser.</p>
+    <p>L'empreinte de votre navigateur <strong>a été rendue aléatoire</strong> parmi les {{ total_formatted }} tests effectués ces 45 derniers jours. Même si des adversaires sophistiqués peuvent encore vous suivre dans une certaine mesure, la randomisation offre une protection très robuste contre les entreprises de pistage cherchant à relever l'empreinte de votre navigateur.</p>
     {% elif matching == 1: %}
-    <p>Your browser fingerprint <strong>appears to be unique</strong> among the {{ total_formatted }} tested in the past 45 days.</p>
+    <p>L'empreinte de votre navigateur <strong>semble unique</strong> parmi les {{ total_formatted }} tests effectués ces 45 derniers jours.</p>
     {% else %}
-    <p>Within our dataset of {{ sample_string }} visitors tested in the past 45 days, {% if group > 100 %}only {% endif %}<strong>one in {{ group }} browsers have the same fingerprint as yours.</strong></p>
+    <p>Au sein de notre échantillon de {{ sample_string }} visiteurs testés ces 45 derniers jours, {% if group > 100 %}seul {% endif %}<strong>un navigateur sur {{ group }} possède la même empreinte que le vôtre.</strong></p>
     {% endif %}
-    <p>Currently, we estimate that your browser has a fingerprint that conveys <strong>{% if matching == 1 %}at least {% endif %}{{ bits }} bits of identifying information.</strong></p>
+    <p>Actuellement, nous estimons que votre navigateur transmet une empreinte contenant <strong>{% if matching == 1 %}au moins {% endif %}{{ bits }} bits d'information identifiante.</strong></p>
     {% if ios_lockdown %}
-    <p style='font-weight: bold; color: red;'>Importantly, we have also <a href='https://www.vice.com/en/article/epzpb4/websites-can-identify-if-youre-using-iphones-new-lockdown-mode'>determined</a> that you are using an iOS 16 device in Lockdown Mode.</p>
+    <p style='font-weight: bold; color: red;'>Important&nbsp;: nous avons également <a href='https://www.vice.com/en/article/epzpb4/websites-can-identify-if-youre-using-iphones-new-lockdown-mode'>déterminé</a> que vous utilisez un appareil iOS en mode Isolement (Lockdown Mode).</p>
     {% endif %}
     {% if total < 10000 %}
-    <p>Because our dataset is still quite small, you might want to check back later for a more accurate measurement of your browser's uniqueness.</p>
+    <p>Notre jeu de données étant pour l'instant restreint, vous pouvez renouveler le test ultérieurement pour une mesure plus précise de l'unicité de votre navigateur.</p>
     {% endif %}
-    <p>The measurements we used to obtain this result are listed below. You can <a href="about">read more about our methodology, statistical results, and some defenses against fingerprinting here</a>.</p>
+    <p>Les mesures utilisées pour obtenir ce résultat sont listées ci-dessous. Vous pouvez <a href="about">en savoir plus sur notre méthodologie, nos résultats statistiques et les défenses contre l'empreinte numérique ici</a>.</p>
   </div>
   <div id="results">
-    <h2>Detailed Results</h2>
-    <p>Here’s some more  granular information we gathered about your browser. Your report includes examples of several different kinds of metrics: </p>
+    <h2>Résultats détaillés</h2>
+    <p>Voici des informations plus détaillées recueillies sur votre navigateur. Votre rapport comprend plusieurs types de métriques&nbsp;: </p>
 
-    <h5>Web Headers</h5>
-    <p>Whenever you connect to a website (in our case, “<strong>https://{{ config.get('SITE_DOMAIN') }}</strong>”),  your device sends a request that includes HTTP headers. These headers contain information like your device’s timezone, language, privacy settings, and cookies. Web headers are transmitted by your browser with every site visit.</p>
+    <h5>En-têtes Web</h5>
+    <p>Chaque fois que vous vous connectez à un site Web (ici «&nbsp;<strong>https://{{ config.get('SITE_DOMAIN') }}</strong>&nbsp;»), votre appareil envoie une requête qui inclut des en-têtes HTTP. Ces en-têtes contiennent des informations telles que le fuseau horaire de votre appareil, sa langue, ses paramètres de confidentialité et ses cookies. Les en-têtes Web sont transmis par votre navigateur à chaque visite de site.</p>
 
-    <h5>JavaScript-derived Characteristics</h5>
-    <p>Some details about your browser can be discovered by using JavaScript code. This includes fonts, certain details about your hardware configuration, and your canvas fingerprint.</p>
+    <h5>Caractéristiques obtenues via JavaScript</h5>
+    <p>Certains détails de votre navigateur peuvent être découverts à l'aide de code JavaScript. Cela inclut les polices installées, certaines informations sur votre configuration matérielle et votre empreinte Canvas.</p>
 
     <ul class="toc">
-      <h5>Select a characteristic</h5>
+      <h5>Sélectionner une caractéristique</h5>
       {% for key, label in labels.items(): %}
       <li><a href="#{{ label }}">{{ label }}</a></li>
       {% endfor %}
     </ul>
     <div class="selectmenu">
-      <label for="characteristic">Select a characteristic</label>
+      <label for="characteristic">Sélectionner une caractéristique</label>
       <select id="characteristic">
         {% for key, label in labels.items(): %}
         <option value="#{{ label }}">{{ label }}</option>
@@ -41,13 +41,13 @@
       </select>
     </div>
     <div class="results-buttons">
-      <span id="default-button" class="button-style">default view</span>
-      <span id="detailed-button" class="button-style">detailed view</span>
+      <span id="default-button" class="button-style">Vue standard</span>
+      <span id="detailed-button" class="button-style">Vue détaillée</span>
     </div>
 
     <div class="detailed-results">
     {% for key, label in labels.items(): %}
-    <div class="results-table">
+    <div class="results-table" data-key="{{ key }}">
       <h4 id="{{ label }}" name="{{ label }}">{{ label }}</h4>
       <div class="default">{{ whorls[key] }}</div>
 
@@ -55,13 +55,13 @@
       <div class="text detailed">
       </div>
       <div class="detailed">
-        Bits of identifying information: <em>{{ uniqueness[key]['bits'] }}</em>
+        Bits d'information identifiante&nbsp;: <em>{{ uniqueness[key]['bits'] }}</em>
       </div>
       <div class="detailed">
         {% if uniqueness[key]['one_in_x'] == -1 %}
-        One in <i><font face=times new roman,times,serif>x</font></i> browsers have this value: <span class='ii'>N/A</span>
+        Un navigateur sur <i><font face=times new roman,times,serif>x</font></i> possède cette valeur&nbsp;: <span class='ii'>N/D</span>
         {% else %}
-        One in <i><font face=times new roman,times,serif>x</font></i> browsers have this value: <em>{{ uniqueness[key]['one_in_x'] }}</em>
+        Un navigateur sur <i><font face=times new roman,times,serif>x</font></i> possède cette valeur&nbsp;: <em>{{ uniqueness[key]['one_in_x'] }}</em>
         {% endif %}
         <hr/>
       </div>

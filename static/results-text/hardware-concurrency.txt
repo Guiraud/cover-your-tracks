@@ -1,6 +1,4 @@
-<h5>What is this?</h5>
-<p>This metric notes the number of CPU cores in your current machine.
-</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>This can provide some additional information when combined with other fingerprinting metrics, but is not identifying on its own.
-</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Cette métrique indique le nombre de cœurs logiques de calcul disponibles sur votre processeur.</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Elle apporte une information complémentaire sur la configuration matérielle, mais n'est pas identifiante à elle seule sans être recoupée avec d'autres mesures.</p>

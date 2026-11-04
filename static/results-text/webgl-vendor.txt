@@ -1,6 +1,4 @@
-<h5>What is this?</h5>
-<p>WebGL is a library that allows browsers to render 3D graphics. As with other graphics-based tracking methods, trackers look for any tiny differences between how your device displays 3D on the web compared to other users.
-</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>This metric provides some level of granularity, depending on how unique your video card is. The WebGL Vendor and renderer is directly searchable using JavaScript, so trackers can access it without issue.
-</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Cette métrique révèle le constructeur et le modèle du processeur graphique (GPU) ainsi que le pilote de rendu WebGL utilisé.</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Accessible sans restriction via JavaScript, elle informe avec précision sur le modèle exact de votre carte graphique et son pilote.</p>

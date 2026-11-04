@@ -1,6 +1,4 @@
-<h5>What is this?</h5>
-<p>WebGL is a JavaScript API for rendering interactive 2D and 3D graphics. The method for generating a “hash of WebGL fingerprint” is very similar to generating a “hash of canvas fingerprint.” Its method is to use your browser to generate graphics, extracting data from how each pixel is rendered, serialize the result, and hash it.
-</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>The WebGL and canvas fingerprinting results are closely linked. They both examine browser-rendered graphics for tiny differences between users.
-</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Tout comme l'empreinte Canvas, les traqueurs utilisent l'API WebGL pour dessiner des images 3D invisibles dans votre navigateur et en calculer une empreinte (hash).</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>La façon dont votre navigateur affiche ces images 3D varie selon les spécificités de votre carte graphique et de vos pilotes. Cette mesure offre un haut niveau de précision pour différencier les appareils.</p>

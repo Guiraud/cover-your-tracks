@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 
   tippy('#whats-this', {
-      content: "In order to test whether some tracking companies have been whitelisted (unblocked) by your blocking or privacy software, we need to have your browser try to connect to one of these companies. You can enable or disable this as you prefer."
+      content: "Afin de tester si certaines régies publicitaires ont été autorisées (liste blanche) par vos outils de protection, votre navigateur tentera de se connecter à l'une d'elles. Vous pouvez activer ou désactiver cette option selon votre préférence."
   });
 
   $('.stop').on( 'click', function(e) {

@@ -3,56 +3,56 @@
 {% block body %}
   <div id="about">
 
-    <h1>About Cover Your Tracks</h1>
+    <h1>À propos de Cover Your Tracks</h1>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#methodology">Methodology</a></li>
-      <li><a href="#browser-fingerprinting">What is browser fingerprinting?</a></li>
-      <li><a href="#do-not-track">What is Do Not Track?</a></li>
+      <li><a href="#about">Présentation</a></li>
+      <li><a href="#methodology">Méthodologie</a></li>
+      <li><a href="#browser-fingerprinting">Qu'est-ce que l'empreinte numérique (browser fingerprinting)&nbsp;?</a></li>
+      <li><a href="#do-not-track">Qu'est-ce que Do Not Track&nbsp;?</a></li>
     </ul>
-    <h2>About</h2>
-    <p>Cover Your Tracks is two things: a tool for users to understand how unique and identifiable their browser makes them online, and a research project to uncover the tools and techniques of online trackers and test the efficacy of privacy add-ons. Running tests on Cover Your Tracks gives you information about your own browser’s privacy protections, and also helps EFF use statistical methods to evaluate the capabilities of third-party trackers and the best forms of protection against them.</p>
+    <h2>Présentation</h2>
+    <p>Cover Your Tracks poursuit un double objectif&nbsp;: fournir aux internautes un outil pour comprendre à quel point leur navigateur les rend uniques et identifiables en ligne, et constituer un projet de recherche pour mettre au jour les outils et techniques des traqueurs tout en évaluant l'efficacité des extensions de protection de la vie privée. Lancer des tests sur Cover Your Tracks vous renseigne sur les protections de votre propre navigateur et aide l'EFF à mesurer statistiquement les capacités des traqueurs tiers et les meilleures formes de protection.</p>
 
-    <p>In 2010, EFF launched this project as “<strong>Panopticlick</strong>,” a research project to investigate how unique each browser is. We gathered information about the configuration and version information from your operating system, your browser, and your plugins, and compared it to our database of many other Internet users' configurations. Then, we generated a uniqueness score letting you see how easily identifiable you might be as you surf the web. A paper reporting the early statistical results of this 2010 experiment was <a href=" https://coveryourtracks.eff.org/browser-uniqueness.pdf">published</a> in the Proceedings of the Privacy Enhancing Technologies Symposium (PETS).
+    <p>En 2010, l'EFF a lancé ce projet sous le nom de «&nbsp;<strong>Panopticlick</strong>&nbsp;», une recherche pionnière visant à mesurer l'unicité de chaque navigateur. Nous recueillions des informations de configuration et de version de votre système d'exploitation, de votre navigateur et de vos modules d'extension, puis nous les comparions à notre base de données regroupant de nombreuses configurations d'internautes. Nous générions ensuite un score d'unicité montrant votre degré d'identifiabilité lors de votre navigation. L'article présentant les premiers résultats statistiques de cette expérience a été <a href="https://coveryourtracks.eff.org/browser-uniqueness.pdf">publié</a> dans les actes du <em>Privacy Enhancing Technologies Symposium</em> (PETS).
     </p>
 
-    <p>In 2015, we upgraded the project with a new feature: tracker blocker testing. Millions of Internet users are using privacy add-ons and other tools to block trackers, including tools like AdBlock, Ghostery, and Disconnect. But how well do these add-ons actually protect users from invasive tracking?
+    <p>En 2015, nous avons enrichi le projet d'une nouvelle capacité&nbsp;: le test des bloqueurs de traqueurs. Des millions d'internautes emploient des extensions de confidentialité et divers outils pour bloquer les traqueurs (AdBlock, Ghostery, Disconnect, etc.). Mais dans quelle mesure ces extensions protègent-elles réellement contre un pistage invasif&nbsp;?
     </p>
 
-    <p>Our new version of the project, rebranded and launched in 2020 as Cover Your Tracks, researches both how unique your browser is and how effective tracker blockers are. We analyze how well you are protected against online tracking by checking the privacy protections you have in place. The test simulates loading of various types of trackers, and determines your level of protection based on if the trackers load or not.
+    <p>Lancée en 2020 sous le nom de Cover Your Tracks, la nouvelle version du projet étudie simultanément l'unicité de votre navigateur et l'efficacité des bloqueurs de traqueurs. Nous analysons votre degré de protection contre le pistage en ligne en vérifiant les mécanismes de défense en place. Le test simule le chargement de différents types de traqueurs et détermine votre niveau de protection selon que les traqueurs parviennent ou non à se charger.
     </p>
 
-    <p>Even if your privacy add-ons are working well, you may still be vulnerable if your browser fingerprint is unique. So we also analyze the uniqueness of your browser and let you know how it stacks up to other visitors we’ve observed recently. We generate a report about your tracker protections and browser fingerprint for your own use, and we’ll use anonymous results from your test when generating uniqueness results for others when they take the test.
+    <p>Même si vos extensions de protection fonctionnent correctement, vous restez vulnérable si l'empreinte de votre navigateur est unique. Nous analysons donc également l'unicité de votre navigateur et vous indiquons comment il se positionne par rapport aux autres visiteurs récemment observés. Nous produisons un rapport détaillé sur vos protections et votre empreinte, et nous intégrons les résultats anonymisés de votre test aux calculs statistiques d'unicité présentés aux futurs visiteurs.
     </p>
 
-    <h2 id="methodology">Methodology</h2>
+    <h2 id="methodology">Méthodologie</h2>
 
-    <p>The results of Cover Your Tracks use several simulated tracking domains to trigger tracker blockers. Some blockers (such as Adblock Plus or Ghostery) are triggered by URL parameters that match ads or tracking beacons. Other blockers (such as AdAway or Disconnect) match on a per-domain basis, and we strive to have our test domains included in such tools’ lists. Still other blockers (such as our own Privacy Badger) use a heuristic approach, blocking the inclusion of trackers by detecting their use across domains.
+    <p>Les résultats de Cover Your Tracks reposent sur plusieurs domaines de pistage simulés afin de solliciter les bloqueurs de traqueurs. Certains bloqueurs (comme Adblock Plus ou Ghostery) sont déclenchés par des paramètres d'URL correspondant à des publicités ou des balises de suivi. D'autres bloqueurs (comme AdAway ou Disconnect) filtrent par nom de domaine, et nous veillons à ce que nos domaines de test soient répertoriés dans ces listes. D'autres encore (comme Privacy Badger de l'EFF) utilisent une approche heuristique en bloquant les traqueurs dès lors qu'ils sont détectés sur plusieurs domaines distincts.
     </p>
 
-    <p>In order to detect these different approaches, we have simulated tracking that triggers all three types of blocking. The Cover Your Tracks site generates third-party requests like:
-    </p>
-
-    <p>
-      https://<strong>trackersimulator.org</strong>/?action=tracking_tally&<strong>ad_url</strong>=123456 <br>
-      https://<strong>eviltracker.net</strong>/?action=tracking_tally&<strong>trackingserver</strong>=123456 <br>
-      https://<strong>do-not-tracker.org</strong>/?action=tracking_tally&random=123456
+    <p>Afin d'évaluer ces différentes approches, nous simulons un pistage qui active ces trois modes de blocage. Le site Cover Your Tracks émet des requêtes tierces de type&nbsp;:
     </p>
 
     <p>
-      Each of these URLs attempts to set cookies, and is loaded from three first party domains in order to trigger heuristic blocking.
+      https://<strong>trackersimulator.org</strong>/?action=tracking_tally&amp;<strong>ad_url</strong>=123456 <br>
+      https://<strong>eviltracker.net</strong>/?action=tracking_tally&amp;<strong>trackingserver</strong>=123456 <br>
+      https://<strong>do-not-tracker.org</strong>/?action=tracking_tally&amp;random=123456
     </p>
 
     <p>
-      The first URL simulates tracking by a visible ad (if the ad is blocked, the test passes); the second simulates a non-visible tracking beacon (if the beacon is blocked, the test passes); and the third interaction with a domain that has implemented the Do Not Track Policy (if the domain’s scripts are unblocked, the test passes).
+      Chacune de ces adresses tente de déposer des cookies et est appelée depuis trois domaines principaux distincts afin de déclencher le blocage heuristique.
     </p>
 
     <p>
-      If the simulated ad or beacon trackers load, but with their cookies blocked, those results are reported as “partial protection”, since the site doesn’t get an easy unique identifier, but tracking by IP addresses and other means remain possible.
+      La première URL simule le pistage par une publicité visible (si la publicité est bloquée, le test réussit)&nbsp;; la deuxième simule une balise de pistage invisible (si la balise est bloquée, le test réussit)&nbsp;; et la troisième interagit avec un domaine respectant la politique Do Not Track (si les scripts du domaine ne sont pas bloqués, le test réussit).
     </p>
 
     <p>
-      In addition to tracker blocking, Cover Your Tracks measures the uniqueness of your browser. We anonymously log the following information, and compare it to a database of many other Internet users' configurations that we’ve observed recently:
+      Si la publicité ou la balise simulée parvient à se charger mais que ses cookies sont bloqués, le résultat est qualifié de «&nbsp;protection partielle&nbsp;»&nbsp;: le site n'obtient pas un identifiant unique immédiat, mais le suivi par adresse IP et par d'autres moyens reste possible.
+    </p>
+
+    <p>
+      En plus du blocage des traqueurs, Cover Your Tracks mesure l'unicité de votre navigateur. Nous enregistrons de manière anonyme les informations suivantes et les comparons à notre base de données de configurations récentes&nbsp;:
     </p>
 
     <ul>
@@ -60,71 +60,67 @@
     </ul>
 
     <p>
-      Then, we generate a uniqueness score — letting you see how easily identifiable you might be as you surf the web. <a href='https://www.eff.org/deeplinks/2010/01/primer-information-theory-and-privacy'>Here’s more information on how this score is derived.</a>
+      Puis, nous générons un score d'unicité vous montrant à quel point vous êtes identifiable lors de votre navigation. <a href='https://www.eff.org/deeplinks/2010/01/primer-information-theory-and-privacy'>Pour en savoir plus sur le calcul de ce score, consultez notre article sur la théorie de l'information</a>.
     </p>
 
-    <h2 id="browser-fingerprinting">What is fingerprinting? What does it mean if my browser is unique?</h2>
+    <h2 id="browser-fingerprinting">Qu'est-ce que l'empreinte numérique&nbsp;? Que signifie avoir un navigateur unique&nbsp;?</h2>
 
     <p>
-      “Browser fingerprinting” is a method of tracking web browsers by the configuration and settings information they make visible to websites, rather than traditional tracking methods such as IP addresses  and unique cookies.
-    </p>
-
-    <p>
-      Browser fingerprinting is both difficult to detect and and extremely difficult to thwart.
+      L'«&nbsp;empreinte numérique du navigateur&nbsp;» (browser fingerprinting) est une méthode de pistage reposant sur les caractéristiques de configuration et les paramètres que les navigateurs exposent aux sites Web, plutôt que sur les méthodes traditionnelles comme les adresses IP ou les cookies uniques.
     </p>
 
     <p>
-      When you load a web page, you will automatically broadcast certain information about your browser to the website you are visiting &mdash; as well as to any trackers embedded within the site (such as those that serve advertisements). The site you are visiting may choose to analyze your browser using JavaScript, Flash and other methods (just like Cover Your Tracks does). It may look for what types of fonts you have installed, the language you’ve set, the add-ons you’ve installed, and other factors. The site may then create a type of profile of you, tied to this pattern of characteristics associated with your browser, rather than tied to a specific tracking cookie.
+      L'empreinte numérique est à la fois difficile à détecter et extrêmement ardue à déjouer.
     </p>
 
     <p>
-      If your browser is unique, then it’s possible that an online tracker can identify you even without setting tracking cookies. While the tracker won’t know your name, they could collect a deeply personal dossier of websites you visit.
+      Lorsque vous chargez une page Web, vous transmettez automatiquement certaines informations relatives à votre navigateur au site visité &mdash; ainsi qu'aux traqueurs intégrés dans la page (tels que ceux qui diffusent des annonces). Le site peut choisir d'analyser votre navigateur au moyen de scripts JavaScript (exactement comme le fait Cover Your Tracks). Il peut examiner les polices installées, votre langue, vos modules complémentaires et de multiples autres facteurs. Le site crée alors un profil associé à cette combinaison unique de caractéristiques, sans avoir besoin d'un cookie de suivi.
     </p>
 
     <p>
-      Deleting your cookies won’t help, because it’s the characteristics of your browser configuration that are being analyzed. Read our <a href="learn#simple">suggestions to help defend against browser fingerprinting</a>.
-    </p>
-
-    <h2 id="do-not-track">What is Do Not Track? Why would I want to unblock ads that respect Do Not Track?</h2>
-
-    <p>
-      Every time your computer sends or receives information over the Web, the request begins with some short pieces of information called <a href="https://secure.wikimedia.org/wikipedia/en/wiki/List_of_HTTP_header_fields">headers</a>. These headers include information like what browser you're using, what language your computer is set to, and other technical details.
+      Si votre navigateur est unique, un traqueur en ligne peut vous identifier même sans déposer de cookies. Bien qu'il ne connaisse pas votre nom civil, il peut accumuler un historique très intime des sites que vous fréquentez.
     </p>
 
     <p>
-      Do Not Track is a simple, machine-readable header indicating that you don't want to be tracked. Because this signal is a header, and not a cookie, users can clear their cookies at will without disrupting the functionality of the Do Not Track flag.
+      Supprimer vos cookies ne résout pas le problème, car ce sont les caractéristiques structurelles de votre configuration qui sont mesurées. Consultez nos <a href="learn#simple">conseils pour vous prémunir contre l'empreinte numérique</a>.
+    </p>
+
+    <h2 id="do-not-track">Qu'est-ce que Do Not Track&nbsp;? Pourquoi débloquer les régies respectant Do Not Track&nbsp;?</h2>
+
+    <p>
+      Chaque fois que votre ordinateur échange des données sur le Web, la requête débute par de courts segments d'information appelés <a href="https://fr.wikipedia.org/wiki/Liste_des_en-t%C3%AAtes_HTTP">en-têtes HTTP</a>. Ces en-têtes renseignent le navigateur employé, la langue du système et d'autres paramètres techniques.
     </p>
 
     <p>
-      In all the major browsers, there is an easy way to tell websites that you do not want to be tracked by setting the Do Not Track header. (<a href="https://www.eff.org/deeplinks/2012/06/how-turn-do-not-track-your-browser">Do it yourself</a> or <a href="https://privacybadger.org" target="_blank">install EFF’s Privacy Badger</a> and we’ll turn it on for you in Chrome and Firefox.)
+      Do Not Track (DNT) est un en-tête lisible par machine indiquant que vous refusez d'être pisté. S'agissant d'un en-tête et non d'un cookie, vous pouvez vider vos cookies à volonté sans altérer ce signal.
     </p>
 
     <p>
-      When websites respect the Do Not Track signal, it’s easy for users to protect themselves from online tracking. The average Internet user won’t need to remember to delete cookies, install additional privacy software, or even worry about browser fingerprinting. (link to browser fingerprinting section).
+      Tous les principaux navigateurs permettent d'activer l'en-tête Do Not Track dans leurs options (<a href="https://www.eff.org/deeplinks/2012/06/how-turn-do-not-track-your-browser">activez-le vous-même</a> ou <a href="https://privacybadger.org" target="_blank">installez Privacy Badger de l'EFF</a> qui l'activera pour vous dans Chrome et Firefox).
     </p>
 
     <p>
-      Unfortunately, most websites and online trackers &mdash; with some laudable exceptions &mdash; currently ignore  the Do Not Track signal entirely.
+      Lorsque les sites respectent le signal Do Not Track, les internautes peuvent se prémunir simplement du pistage sans avoir à purger constamment leurs cookies ou installer des outils complexes.
     </p>
 
     <p>
-      Setting your browser to unblock ads from websites that commit to respecting Do Not Track rewards companies that are respecting user privacy, incentivizing more companies to respect Do Not Track in order to have their ads shown at all. By preserving privacy-friendly ads, sites that rely on advertising funding can continue to thrive without adjusting their core business model, even as they respect users’ privacy choices.
+      Malheureusement, la plupart des sites commerciaux et régies publicitaires &mdash; à quelques exceptions notables &mdash; ignorent encore totalement ce signal.
     </p>
 
     <p>
-      Over time, we believe we can shift the norms on the Web to ensure privacy and respect for users comes first. But that can only happen if online advertisers are incentivized to respect user choices.
+      Configurer votre bloqueur pour autoriser les sites s'engageant à respecter Do Not Track récompense les acteurs respectueux de la vie privée et incite l'écosystème à faire de même. Les sites dépendant de la publicité peuvent ainsi vivre décemment sans compromettre le choix de leurs visiteurs.
     </p>
 
     <p>
-      You can help us by <a href="https://privacybadger.org" target="_blank">installing EFF’s Privacy Badger</a>.
+      Vous pouvez soutenir cette démarche en <a href="https://privacybadger.org" target="_blank">installant Privacy Badger de l'EFF</a>.
     </p>
     <a name="defend-against"></a>
-    <h3>Is it possible to defend against browser fingerprinting?</h3>
+    <h3>Est-il possible de se défendre contre l'empreinte numérique&nbsp;?</h3>
 
     <p>
-      Browser fingerprinting is quite a powerful method of tracking users around the Internet. There are some defensive measures that can be taken with existing browsers, but none of them are ideal. In practice, the most realistic protection is using the Tor Browser, which has put a lot of effort into reducing browser fingerprintability.  For day-to-day use, the best options are to run tools like Privacy Badger or Disconnect that will block some (but unfortunately not all) of the domains that try to perform fingerprinting, and/or to use a tool like NoScript for Firefox, which greatly reduces the amount of data available to fingerprinters.
+      L'empreinte numérique est une méthode de suivi redoutable. Des mesures défensives existent, mais aucune n'est parfaite dans un navigateur ordinaire. En pratique, la protection la plus solide est le navigateur Tor (Tor Browser), qui uniformise drastiquement les configurations pour fondre les utilisateurs dans la masse. Au quotidien, utiliser des outils comme Privacy Badger ou Disconnect bloque une partie des domaines de pistage, et des extensions comme NoScript réduisent considérablement la surface d'exposition aux scripts d'empreinte.
     </p>
-    <p>For more information on how to protect yourself against fingerprinting, visit our <a href="/learn">learning page</a>.</p>
+    <p>Pour en savoir plus sur les moyens de protection, consultez notre <a href="/learn">guide pédagogique</a>.</p>
   </div>
 {% endblock %}
 {% block java %}{% endblock %}

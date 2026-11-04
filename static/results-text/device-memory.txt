@@ -1,6 +1,4 @@
-<h5>What is this?</h5>
-<p>This metric notes the amount of memory on your current machine, rounded to the nearest gigabyte.
-</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>The usefulness of this metric is like hardware concurrency. It is useful when combined with other metrics, but is not identifying on its own.
-</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Cette métrique indique la quantité approximative de mémoire vive (RAM) de votre appareil, arrondie en gigaoctets (Go).</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Comme pour le nombre de cœurs de processeur, cette donnée est utile lorsqu'elle est croisée avec d'autres caractéristiques, mais n'est pas identifiante à elle seule.</p>

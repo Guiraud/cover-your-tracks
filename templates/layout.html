@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html lang="en">
-<html>
+<html lang="fr">
   <head>
     <title>Cover Your Tracks{% if title %} | {{ title }}{% endif %}</title>
     <link rel="stylesheet" href="static/style.css" type="text/css" />
@@ -9,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta property="og:image" content="https://{{ config.get('SITE_DOMAIN') }}/static/images/cyt-banner.png"/>
     <meta property="og:image:secure_url" content="https://{{ config.get('SITE_DOMAIN') }}/static/images/cyt-banner.png"/>
-    <meta property="og:description" content="See how trackers view your browser"/>
+    <meta property="og:description" content="Voyez comment les traqueurs perçoivent votre navigateur"/>
     <!-- Twitter: card tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Cover Your Tracks">
-    <meta name="twitter:description" content="See how trackers view your browser">
-    <meta name="twitter:image"  content="https://{{ config.get('SITE_DOMAIN') }}/static/images/cyt-banner.png">
+    <meta name="twitter:description" content="Voyez comment les traqueurs perçoivent votre navigateur">
+    <meta name="twitter:image" content="https://{{ config.get('SITE_DOMAIN') }}/static/images/cyt-banner.png">
     {% block meta %}
       <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     {% endblock %}
@@ -30,9 +29,8 @@
           <div class="bar">
             <div class="wrapper">
             <div class="attribution">
-              <img class="logo" src="/static/images/eff-logo-red.svg" alt="EFF logo">
-              <span>A Project of the <a href="https://www.eff.org/">Electronic Frontier Foundation</a>
-              <span>
+              <img class="logo" src="/static/images/eff-logo-red.svg" alt="Logo EFF">
+              <span>Un projet de l'<a href="https://www.eff.org/">Electronic Frontier Foundation</a> (EFF)</span>
             </div>
           </div>
           </div>
@@ -42,14 +40,15 @@
                 <a class="cyt-logo" href="/">
                 </a>
               <h2 class="tagline">
-                See how trackers view your browser
+                Voyez comment les traqueurs perçoivent votre navigateur
               </h2>
             </div>
             <nav>
               <ul>
-                <li><a href="/learn">Learn</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="https://supporters.eff.org/donate/coveryourtracks" target=_blank>Donate</a></li>
+                <li><a href="/kcarter-nojs">Tester</a></li>
+                <li><a href="/learn">Comprendre</a></li>
+                <li><a href="/about">À propos</a></li>
+                <li><a href="https://supporters.eff.org/donate/coveryourtracks" target="_blank">Faire un don</a></li>
               </ul>
             </nav>
         </div>
@@ -85,10 +84,10 @@
           <div class="footer-logo"></div>
 
           <div class="links">
-            <a href="https://supporters.eff.org/donate/coveryourtracks">Donate to EFF</a>
+            <a href="https://supporters.eff.org/donate/coveryourtracks">Faire un don à l'EFF</a>
             <a href="https://www.eff.org/about/contact">Contact</a>
-            <a href="/privacy">Privacy</a>
-            <a href="https://www.eff.org/copyright">CC-License</a>
+            <a href="/privacy">Confidentialité</a>
+            <a href="https://www.eff.org/copyright">Licence CC</a>
           </div>
         </footer>
       {% endblock %}

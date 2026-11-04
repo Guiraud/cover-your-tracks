@@ -1,7 +1,4 @@
-<h5>What is this?</h5>
-<p>To determine your system fonts, tracking sites commonly display some text in an <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span'>HTML &lt;span&gt; tag</a>.  Trackers then rapidly change the style for that span, rendering it in hundreds or thousands of known fonts. For each of these fonts, the site determines whether the width of the span has changed from the default width when rendered in that particular font. If it has, the tracker knows that font is installed.
-</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>
-The list of fonts you have installed on your machine is generally consistent and linked to a particular operating system. If you install just one font which is unusual for your particular browser, this can be a highly identifying metric. 
-</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Pour déterminer vos polices système, les sites de suivi affichent discrètement du texte avec différentes polices et mesurent la largeur et la hauteur du rendu. Si les dimensions changent par rapport à la police par défaut, le traqueur sait que la police est installée.</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>La liste des polices installées sur votre machine est généralement très stable et propre à vos logiciels installés. L'installation d'une seule police inhabituelle peut rendre votre navigateur immédiatement identifiable.</p>

@@ -1,18 +1,13 @@
-<h5>What is this?</h5>
-<p>A tracking site can perform a specific test on the HTML5 &lt;canvas&gt; element in your browser. This metric is the unique identification the tracker assigns to your browser after it performs this test.</p>
-<p>
- <a href='https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API'>Canvas fingerprinting</a>  is invisible to the user. A tracker can create a “canvas” in your browser, and generate a complicated collage of shapes, colors, and text using JavaScript. Then, with the resulting collage, the tracker extracts data about exactly how each pixel on the canvas is rendered. Many variables will affect the final result. These include your operating system, graphics card, firmware version, graphics driver version, and installed fonts.
-</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>This is a complex and very reliable fingerprinting metric for trackers.
-</p>
-<p>Slightly different images will be rendered due to small differences in:
-</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Un site de pistage peut effectuer un rendu graphique spécifique sur l'élément HTML5 &lt;canvas&gt; de votre navigateur. Cette métrique correspond à l'empreinte unique (hash) générée par ce test.</p>
+<p>L'<a href='https://developer.mozilla.org/fr/docs/Web/API/Canvas_API'>empreinte Canvas</a> est invisible pour l'utilisateur. Un traqueur crée une zone de dessin invisible et génère un collage complexe de formes, de dégradés et de textes via JavaScript. Ensuite, il extrait les données de rendu pixel par pixel. De nombreuses variables influencent le résultat final : système d'exploitation, carte graphique, version des pilotes graphiques et polices installées.</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Il s'agit d'une métrique d'empreinte complexe et particulièrement fiable pour les traqueurs.</p>
+<p>Des variations subtiles apparaissent en raison de petites différences dans :</p>
 <ul>
-<li>video card hardware,</li>
-<li>video drivers,</li>
-<li>operating system, and</li>
-<li>installed fonts.</li>
+<li>le matériel graphique,</li>
+<li>les pilotes de la carte graphique,</li>
+<li>le système d'exploitation, et</li>
+<li>les polices de caractères installées.</li>
 </ul>
-<p>These settings are different from one computer to the next. But they tend to be consistent enough on a single machine to clearly identify a user.
-</p>
+<p>Ces configurations diffèrent souvent d'une machine à l'autre et demeurent remarquablement stables sur un même appareil.</p>

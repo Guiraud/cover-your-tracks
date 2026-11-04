@@ -1,7 +1,4 @@
-<h5>What is this?</h5>
-<p>This metric includes your operating system and CPU (central processing unit) architecture and is directly searchable by trackers using JavaScript.
-</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>
-This can either be very unique or very commonplace, depending on your particular machine.
-</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Cette métrique renseigne votre système d'exploitation et l'architecture du processeur (par exemple Linux x86_64, MacIntel, Win32), interrogeable directement via JavaScript.</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Cette valeur peut être très courante ou au contraire très inhabituelle selon votre environnement de travail.</p>

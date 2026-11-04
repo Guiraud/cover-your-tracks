@@ -1,6 +1,4 @@
-<h5>What is this?</h5>
-<p>This metric refers to the number of touch points on a device, such a tablet or phone.
-</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>If you are using a mobile device, this may be very identifying depending  on the hardware particularities. Your result will be 0 if your device has no touch points. 
-</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Cette métrique indique la prise en charge des écrans tactiles et le nombre maximal de points de contact simultanés.</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Sur mobile ou tablette, elle reflète les capacités matérielles de l'écran tactile. Sur un ordinateur de bureau sans écran tactile, elle vaut généralement 0.</p>

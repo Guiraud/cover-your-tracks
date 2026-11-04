@@ -1,6 +1,4 @@
-<h5>What is this?</h5>
-<p>This metric is a  string which indicates your time zone, like ‘America/Los_Angeles’.</p>
-<h5>How is this used in your fingerprint?</h5>
-<p>
-This metric can be used to figure out your general location, especially if you live in a time zone without many other users.
-</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Cette métrique est une chaîne de caractères indiquant votre fuseau horaire, telle que « Europe/Paris ».</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Elle permet de déduire votre zone géographique générale, d'autant plus facilement si le fuseau est peu fréquenté.</p>

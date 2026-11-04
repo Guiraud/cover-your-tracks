@@ -1,4 +1,4 @@
-<h5>What is this?</h5>
-<p>A plugin is a small piece of software that helps a browser manage content it is unable to process on its own. </p>
-<h5>How is this used in your fingerprint?</h5>
-<p>Browser plugins have been phased out over the past few years. Instead, browsers favor more regulated add-ons and extensions. But plugins persist in older browsers.</p>
+<h5>Qu'est-ce que c'est ?</h5>
+<p>Un plugin (ou module externe) est un composant logiciel permettant au navigateur de gérer des contenus qu'il ne peut pas traiter seul (comme Java ou Flash par le passé).</p>
+<h5>Comment est-ce utilisé dans votre empreinte ?</h5>
+<p>Les plugins traditionnels ont été abandonnés ces dernières années au profit d'extensions plus encadrées. Ils restent cependant détectables sur certains navigateurs plus anciens.</p>
